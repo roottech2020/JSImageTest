@@ -1,40 +1,27 @@
 <html>
 <head>
 <script src="p5.js"> </script>
-//<script src="sketch.js"> </script>
+<script src="sketch.js"> </script>
 <title> JSImage </title>
 </head>
 
 <body>
 <script id="script" type="text/javascript">
-var sunSize;
+var img;
 
 
 function setup(){
 createCanvas(800,800);
-//img = loadImage('dog.jpg');
-background(0);
-  sunSize=1;
+img = loadImage('dog.jpg');
+background(9, 0, 255);
+}
+
+function draw(){
+image(img, 0,0); 
 }
 
 
-
-function draw() {
-noStroke();
-background(82, 222, 240);
-fill(255, 204, 0);
-ellipse(200, 298, sunSize, sunSize);
-
-// The land, blocking half of the sun
-fill(76, 168, 67);
-rect(0, 300, 400, 100);  
-sunSize ++;
-
-    }
-
-
-
 </script>
+<h1> Hello World </h1>
 </body>
 </html>
-
