@@ -18,7 +18,7 @@ var r;
 var g;
 var b;
 var randomSize;
-	var img;
+var img;
 
 function setup(){ //setup() is what happens as soon as you reload the page
 displayH = displayHeight; //define all var (variable) values in the setup
@@ -35,8 +35,8 @@ b=0;
 randomSize=0;
 fill(255, 153, 0);
 rect(0, displayHx2, displayWidth, displayH);
-	img = loadImage('food.jpg');
 //remember syntax is rect(top left x value, top left y value, width, height)
+img = loadImage('food.jpg');
 }
 
 function draw(){ //what happens in loop constantly and forever while site is loaded
@@ -66,6 +66,7 @@ fill(255);
 textSize(50);
 text("WOOT WOOT THANKS FOR PLAYING", 250, (100+ displayHx3));
 image(img, 75,(150+ displayHx3));
+
 scale(2);
 noStroke();
 fill(189, 135, 17);
@@ -124,3 +125,5 @@ if(displayH < (mouseY-100) && (mouseY+100) < displayHx2){
 }    
 
 </script> </body> </html>
+
+
